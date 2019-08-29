@@ -1,5 +1,3 @@
-from collections import Counter
-
 def jobOffers(scores, lowerLimits, upperLimits):
     scores.sort()
     res = [0]*len(lowerLimits)
