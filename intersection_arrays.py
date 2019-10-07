@@ -38,7 +38,7 @@ def lower_bound(arr, start, target):
     l = start
     h = len(arr)
     while l < h:
-        mid = (l + h) // 2
+        mid = l + (h - l) // 2
         if target <= arr[mid]:
             h = mid
         else:

@@ -10,7 +10,6 @@ def in_grid(i, j, grid):
 
 def dfs(res, currentPath, i, j, grid):
     if i == len(grid) - 1 and j == len(grid[0]) - 1:
-        print("currentPath:", currentPath)
         currentPath.append((i, j))
         res.append(currentPath[:])
         return True
