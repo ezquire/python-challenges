@@ -2,9 +2,6 @@ def findShortestPath(grid, sx, sy, dx, dy):
     distance = [[float("inf") for x in range(len(grid[0]))] for y in range(len(grid))] 
     distance[sx][sy] = 0
     dfs(grid, sx, sy, distance)
-#   for dist in distance:
-#      print(dist)
-#   print()
     return distance[dx][dy] if distance[dx][dy] != float("inf") else -1 
     
 def getNextMoves(grid, sx, sy, distance):
@@ -39,4 +36,4 @@ grid2 = [[0, 0, 1, 0, 0],
          [1, 1, 0, 1, 1],
          [0, 0, 0, 0, 0]]
         
-print(findShortestPath(grid2, 0, 0, 0, 1))
+print(findShortestPath(grid2, 3, 2, 2, 2))
